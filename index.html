@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Speech Synthesis - lugom.io</title>
+    <meta name="title" content="Browser Speech Synthesis - lugom.io">
+    <meta name="description"
+        content="O projeto utiliza o recurso de síntese de fala do navegador para transformar um texto digitado pelo usuário em voz.">
+    <meta property="og:title" content="Browser Speech Synthesis - lugom.io">
+    <meta property="og:description"
+        content="O projeto utiliza o recurso de síntese de fala do navegador para transformar um texto digitado pelo usuário em voz.">
+    <meta property="og:image" content="https://lugom.io/projects/browser-speech-synthesis/assets/img/banner.png">
+    <meta name="twitter:title" content="Browser Speech Synthesis - lugom.io">
+    <meta name="twitter:description"
+        content="O projeto utiliza o recurso de síntese de fala do navegador para transformar um texto digitado pelo usuário em voz.">
+    <meta name="twitter:image" content="https://lugom.io/projects/browser-speech-synthesis/assets/img/banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="https://lugom.io/assets/images/favicon.png" type="image/png">
+    <link rel="canonical" href="https://lugom.io/projects/browser-speech-synthesis/">
+</head>
+
+<body>
+
+    <main>
+        <section class="container">
+            <header>
+                <h1>VoiceSyn</h1>
+            </header>
+            <div class="synthesis">
+                <div>
+                    <label for="voice">Voice:</label>
+                    <select name="voice" id="voice">
+                    </select>
+                </div>
+
+                <div>
+                    <label for="rate">Rate:</label>
+                    <input type="range" name="rate" id="rate" min="0" max="10" step="0.1" value="1">
+                </div>
+
+                <div>
+                    <label for="pitch">Pitch:</label>
+                    <input type="range" name="pitch" id="pitch" min="0" max="2" step="0.1" value="1">
+                </div>
+
+                <textarea name="text" id="text" rows="10"
+                    placeholder="Escreva oque desejar transformar em voz."></textarea>
+
+                <button id="toggleVoice">Start</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script id="fixedNavLugomJs" src="https://lugom.io/assets/js/fixedNavLugom.js"></script>
+</body>
+
+</html>
